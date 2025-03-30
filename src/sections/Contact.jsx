@@ -5,13 +5,13 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-pink-200 to-purple-300 px-6"
+      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#2E0D39]  to-[#230A2A] px-6"
     >
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-400 mb-6">
+      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-purple-400 mb-6">
         Contact Me
       </h2>
 
-      <p className="text-lg text-gray-700 max-w-xl text-center mb-6">
+      <p className="text-lg text-purple-200 max-w-xl text-center mb-6">
         I'd love to hear from you! Connect with me on social media or reach out directly.
       </p>
 
@@ -29,7 +29,7 @@ const Contact = () => {
           href="https://github.com/ruzkaw25"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 hover:scale-110 transition transform duration-300"
+          className="text-purple-800 hover:scale-110 transition transform duration-300"
         >
           <FaGithub size={40} />
         </a>
@@ -53,19 +53,19 @@ const Contact = () => {
 
       {/* Direct Contact Info */}
       <div className="text-center">
-        <p className="text-gray-700 text-lg mb-2">
+        <p className="text-purple-200 text-lg mb-2">
           Phone: <span className="font-semibold">+63 9182076442</span>
         </p>
-        <p className="text-gray-700 text-lg mb-4">
+        <p className="text-purple-200 text-lg mb-4">
           Email: <span className="font-semibold">ruzkaw25@gmail.com</span>
         </p>
 
         {/* Fun Question */}
         <div className="border-t pt-4">
-          <p className="text-gray-700 text-lg">
+          <p className="text-purple-200 text-lg">
             <span className="font-semibold">Fun Question:</span> How did you find me?
           </p>
-          <p className="text-gray-700 text-lg italic">
+          <p className="text-purple-200 text-lg italic">
             (Google, LinkedIn, Friend Referral, etc.)
           </p>
         </div>
