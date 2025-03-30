@@ -7,18 +7,18 @@ const projects = [
     description: "A web app that helps students navigate the campus with an interactive 2D map.",
     tech: "React, Vite, Tailwind CSS, Mappedin,  node.js",
     image: "map.svg", // Replace with actual image path
-    link: "http://localhost:5174/main",
+    link: "https://ruzlyn-kaw-portfolio.onrender.com",
   },
   {
     title: "Portfolio",
-    description: "A fully responsive portfolio showcasing my work and skills.",
+    description: "A portfolio showcasing my work and skills.",
     tech: "React, Tailwind CSS",
     image: "myproj.svg", // Replace with actual image path
-    link: "http://localhost:5178/#skills",
+    link: "https://ruzlyn-kaw-portfolio.onrender.com",
   },
   {
     title: "AwesomeToDos",
-    description: "A modern e-commerce platform with a cart system and secure checkout.",
+    description: "A website that you can add and delete what you want to do.",
     tech: "MongoDB, Express.js, React.js, Node.js ",
     image: "awesometodos.svg", // Replace with actual image path
     link: "https://awesometodosapp-i3v8.onrender.com",
