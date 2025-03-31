@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full  shadow-md py-4 px-8 flex justify-between items-center z-50 bg-gradient-to-b from-[#200C28] to-[#52106F] animate-pulse ">
+    <nav className="fixed w-full  shadow-md py-4 px-8 flex justify-between items-center z-50  animate-pulse ">
       {/* Logo */}
-      <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-blue-500">Ruzlyn</h1>
+      <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-500 to-purple-900">PORTFOLIO</h1>
 
       {/* Navigation Links */}
       <ul className="flex space-x-6">

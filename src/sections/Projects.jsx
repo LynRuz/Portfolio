@@ -27,28 +27,29 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="min-h-screen bg-gradient-to-b from-[#230A2A] to-[#2E0D39] py-12 px-6">
-      <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-purple-400 mb-8">
+    <div id="projects" className="min-h-screen py-12 px-6">
+      <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-purple-700 to-purple-950 mb-8">
         My Projects
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          <div key={index} className="bg-purple-200 border-1 border-purple-800 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 bg-gradient-to-b from-[#2C0433] to-[#2E0D39]">
+          <div key={index} className=" border-1 border-purple-800 p-4 rounded-lg shadow-lg  bg-clip-border  
+          transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-purple-500 animate-float ">
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-40 object-cover rounded-t-lg"
             />
             <div className="p-4">
-              <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-purple-400">{project.title}</h3>
+              <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-purple-700 to-purple-900">{project.title}</h3>
               <p className="text-purple-200 mt-2">{project.description}</p>
               <p className="text-sm text-purple-400 mt-1">Tech: {project.tech}</p>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 px-4 py-2 bg-gradient-to-b from-blue-400 to-purple-500 text-purple-200 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 hover:from-blue-700 hover:to-purple-700 "
+                className="inline-block mt-4 px-4 py-2 bg-gradient-to-b from-purple-700 to-purple-950 text-purple-200 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300  hover:to-purple-900 "
               >
                 View Project
               </a>

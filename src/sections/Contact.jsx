@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#2E0D39]  to-[#230A2A] px-6"
+      className="min-h-screen flex flex-col items-center justify-center px-6"
     >
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-purple-400 mb-6">
+      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-purple-700 to-purple-950 mb-6 ">
         Contact Me
       </h2>
 
@@ -16,7 +16,7 @@ const Contact = () => {
       </p>
 
       {/* Social Media Icons */}
-      <div className="flex space-x-6 mb-6">
+      <div className="flex space-x-6 mb-6 animate-bounce">
         <a
           href="https://www.facebook.com/share/1BiP7WSsDZ/?mibextid=wwXI"
           target="_blank"
