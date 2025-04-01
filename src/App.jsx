@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Introduction from "./sections/Introduction";
 import About from "./sections/About";
@@ -7,25 +8,31 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import PrankPage from "./prank/PrankPage";
+import FakeVirus from "./prank/FakeVirus";
 
-function App() {
+const HomePage = () => {
   const [loading, setLoading] = useState(true);
+  const location = useLocation(); // Detects route changes
 
   useEffect(() => {
-    // Simulate loading for 3 seconds
+    setLoading(true); // Reset loader when navigating to home
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 5000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [location.pathname]); // Runs when path changes
 
   return (
     <>
       {/* Loader with fade-out effect */}
-      <div className={`transition-opacity duration-1000 ${loading ? "opacity-100" : "opacity-0 hidden"}`}>
-        <Loader />
-      </div>
+      {loading && (
+        <div className="transition-opacity duration-1000 opacity-100">
+          <Loader />
+        </div>
+      )}
 
       {/* Main content */}
       {!loading && (
@@ -49,6 +56,18 @@ function App() {
         </div>
       )}
     </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<PrankPage />} />
+        <Route path="/virus" element={<FakeVirus />} />
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

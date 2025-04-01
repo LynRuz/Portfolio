@@ -7,7 +7,7 @@ const projects = [
     description: "A web app that helps students navigate the campus with an interactive 2D map.",
     tech: "React, Vite, Tailwind CSS, Mappedin,  node.js",
     image: "map.svg", // Replace with actual image path
-    link: "https://ruzlyn-kaw-portfolio.onrender.com",
+    link: "https://mapawit-com.onrender.com",
   },
   {
     title: "Portfolio",
